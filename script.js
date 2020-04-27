@@ -19,7 +19,7 @@ var hozzavalok = [];
 var elkeszites = [];
 ////-------beolvasas-----------////
 for (let i = 1; i < 12; i++) {
-    $.get('./Receptek/' + i + '.txt', function (textData, status) {
+    $.get('Receptek/' + i + '.txt', function (textData, status) {
         var aLines = textData.split("\n");
         
         $('#myList').append('<option>' + aLines[0] + '</option>');
