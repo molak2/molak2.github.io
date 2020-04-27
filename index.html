@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SÜTTIK!</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <h1>Receptek</h1>
+    <div id="container">
+        <div class="smt">
+            <div>
+                <input id="myInput" type="text" placeholder="Mit szeretnél ma készíteni? :3">
+            </div>
+            <div>
+            <input id="IngSearch" type="text" placeholder="Keresés hozzávaló szerint.">
+            </div>
+            <div>
+                <select id="myList" multiple="multiple">
+                </select>
+            </div>
+            <div><button id="IngButt" for="IngSearch">Keresés</button></div>
+        </div>
+        <div class="b2">
+            <legend class="leg"><u>Hozzávalók:</u></legend>
+            <div id="ing"></div>
+        </div>
+
+        <div class="b3">
+            <legend class="leg"><u>Elkészítés:</u>
+            </legend>
+            <div id="how"></div>
+        </div>
+    </div>
+    <script src="https://requirejs.org/docs/release/2.3.6/comments/require.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
